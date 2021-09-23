@@ -1,0 +1,26 @@
+ class SortArray1 {
+    public static void main(String[] args){
+    int my_array1[] = {
+        1789, 2035, 1899, 1456 // 0,1,2,3 etc 
+        };
+       
+       int temp;
+    
+      
+
+       for (int i=0;i<my_array1.length;i++){
+       for (int j=i;i<my_array1.length;i++){
+           
+        if (my_array1[i]>my_array1[j]){
+            temp = my_array1[i];
+            my_array1[i] = my_array1[j];
+            my_array1[j] = temp;
+        }
+        }
+       }
+       for (int Variable : my_array1){
+           System.out.println(Variable);
+       }
+      } 
+    }
+    
